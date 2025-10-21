@@ -1,35 +1,48 @@
-name: Deploy Eleventy Site
+name: Build and Deploy 11ty Site Safely
 
 on:
   push:
     branches:
-      - main   # or your default branch
+      - main  # Trigger build on pushes to main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout code
+      # 1️⃣ Checkout repo
       - uses: actions/checkout@v3
 
-      # 2. Set up Node.js
+      # 2️⃣ Set up Node.js
       - uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      # 3. Install dependencies
+      # 3️⃣ Install dependencies
       - run: npm install
 
-      # 4. Build the site
+      # 4️⃣ Build 11ty site
       - run: npm run build
 
-      # 5. Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        with:
-          github_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./_site   # <-- corrected folder
-          keep_files: true        # optional, keeps existing files
+      # 5️⃣ Copy built files from _site to a temp folder
+      - name: Copy built site to temp folder
+        run: |
+          mkdir temp_site
+          cp -r _site/* temp_site/
 
+      # 6️⃣ Move temp folder contents to root (without removing source files)
+      - name: Update root with built site
+        run: |
+          cp -r temp_site/* ./
+          rm -rf temp_site
 
+      # 7️⃣ Commit and push changes
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy 11ty site" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
