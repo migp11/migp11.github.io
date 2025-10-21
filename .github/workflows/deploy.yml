@@ -16,7 +16,7 @@ jobs:
       # 2. Set up Node.js
       - uses: actions/setup-node@v3
         with:
-          node-version: 20  # or the version you use
+          node-version: 20
 
       # 3. Install dependencies
       - run: npm install
@@ -29,4 +29,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v6.3.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_sites
+          publish_dir: ./_site   # <-- corrected folder
+          keep_files: true        # optional, keeps existing files
