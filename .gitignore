@@ -16,3 +16,33 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+
+# Node dependencies
+node_modules/
+
+# Eleventy build output
+_site/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files (if any)
+.env
+.env.local
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
