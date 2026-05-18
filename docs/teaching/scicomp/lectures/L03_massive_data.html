@@ -11,7 +11,7 @@
 
   <meta name="author" content="Miguel Ponce de Leon miguel.ponce@bsc.es">
   <meta name="dcterms.date" content="2026-05-05">
-  <title>Scientific Computing and Model Exploration – Taller de computación científica y exploración de modelos complejos</title>
+  <title>Scientific Computing and Model Exploration – Datos masivos</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,10 +128,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="img/bsc_logo.jpg" data-background-position="top left" data-background-size="280px" class="quarto-title-block center">
-  <h1 class="title">Taller de computación científica y exploración de modelos complejos</h1>
-  <p class="subtitle"></p><p>Miguel Ponce de León &lt;<a href="mailto:miguel.ponce@bsc.es" class="email">miguel.ponce@bsc.es</a>&gt;<br>
-<em>Barcelona Supercomputing Center</em></p><p></p>
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Datos masivos</h1>
+  <p class="subtitle">Técnicas para el procesamiento y análisis de datos masivos</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -143,7 +142,7 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
 
   <p class="date">2026-05-05</p>
 </section>
-<section id="que-son-los-datos-masivos" class="slide level2 center">
+<section id="que-son-los-datos-masivos" class="slide level2">
 <h2>¿Que son los datos masivos?</h2>
 <ul>
 <li>Datos que no pueden ser procesados con herramientas tradicionales debido a su volumen, velocidad o variedad.</li>
@@ -151,7 +150,7 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
 <li>Ejemplos: datos de redes sociales, datos de sensores, datos genómicos, etc.</li>
 </ul>
 </section>
-<section id="desafíos-de-los-datos-masivos" class="slide level2 center">
+<section id="desafíos-de-los-datos-masivos" class="slide level2">
 <h2>Desafíos de los datos masivos</h2>
 <ul>
 <li>Almacenamiento: Necesidad de sistemas de almacenamiento escalables y eficientes.</li>
@@ -160,7 +159,7 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
 <li>Visualización: Dificultad para visualizar grandes conjuntos de datos de manera efectiva.</li>
 </ul>
 </section>
-<section id="parquet-arrow-y-dask" class="slide level2 center">
+<section id="parquet-arrow-y-dask" class="slide level2">
 <h2>Parquet, Arrow y Dask</h2>
 <ul>
 <li>Parquet: formato de almacenamiento columnar eficiente para grandes volúmenes de datos.</li>
@@ -168,21 +167,21 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
 <li>Dask: biblioteca de Python para computación paralela, que permite trabajar con grandes conjuntos de datos distribuidos.</li>
 </ul>
 </section>
-<section id="digital-twins" class="slide level2 center">
+<section id="digital-twins" class="slide level2">
 <h2>Digital Twins</h2>
 <p>“There are differences between the way a physicist looks at a problem compared to a computer scientist,” says Hugo Barbosa, a post-doctoral researcher in Ghoshal’s lab, whose PhD is in computer science. “Physicists are more interested in the fundamental rules, the things that are universal, regardless of the populations. They want to understand the basic components of those models and make those components as general and universal as possible.”</p>
 <p>Imagine, for instance, you want to figure out how people walk on a campus. One way of approaching this problem would be to gather all the data possible about every single person on the campus: what they ate that morning, what classes they have at what times, who their friends are, where the buildings are located on the campus, and so on.</p>
 <p>“It would, first of all, be virtually impossible to collect all this data,” Ghoshal says, “plus you wouldn’t be able to apply the same conclusions to the ways people walk on other campuses. The buildings are different, the geography is different.”</p>
 <p>A second way of approaching the problem involves using the methods Ghoshal and his lab members employ: distilling a system to it basics and applying physics, mathematics, and statistics.” Source: https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-predicting-the-future1/</p>
 </section>
-<section id="information-and-communication-technology-ict-data" class="slide level2 center">
+<section id="information-and-communication-technology-ict-data" class="slide level2">
 <h2>Information and Communication Technology (ICT) data</h2>
 <ul>
 <li>Datos generados por dispositivos y sistemas de comunicación, como teléfonos móviles, redes sociales, sensores, etc.</li>
 <li>Ejemplos: datos de llamadas telefónicas, datos de redes sociales, datos de sensores, etc.</li>
 </ul>
 </section>
-<section id="ejemplo-datos-de-movilidad-urbana" class="slide level2 center">
+<section id="ejemplo-datos-de-movilidad-urbana" class="slide level2">
 <h2>Ejemplo: Datos de movilidad urbana</h2>
 <ul>
 <li>Datos de movilidad urbana: datos generados por dispositivos móviles, sensores de tráfico, etc., que pueden ser utilizados para entender patrones de movilidad en ciudades.</li>
@@ -190,7 +189,7 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
 <li>Ciencia básica: teoría de ciudades, modelos de movilidad, etc.</li>
 </ul>
 </section>
-<section id="referencias" class="slide level2 center">
+<section id="referencias" class="slide level2">
 <h2>Referencias</h2>
 <p>Batty, M. (2024). Digital twins in city planning. Nature Computational Science, 4(3), 192-199.</p>
 
@@ -281,7 +280,7 @@ Miguel Ponce de Leon miguel.ponce@bsc.es
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
