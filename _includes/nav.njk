@@ -1,7 +1,7 @@
 <nav>
-  <a href="/">Home</a>
-  <a href="/research/">Research</a>
-  <a href="/projects/">Projects</a>
-  <a href="/teaching/">Teaching</a>
-  <a href="/bio/">Bio</a>
+  <a href="/" {% if page.url == "/" %}class="nav-active"{% endif %}>Home</a>
+  <a href="/research/" {% if page.url == "/research/" %}class="nav-active"{% endif %}>Research</a>
+  <a href="/projects/" {% if page.url == "/projects/" %}class="nav-active"{% endif %}>Projects</a>
+  <a href="/teaching/" {% if page.url == "/teaching/" %}class="nav-active"{% endif %}>Teaching</a>
+  <a href="/bio/" {% if page.url == "/bio/" %}class="nav-active"{% endif %}>Bio</a>
 </nav>

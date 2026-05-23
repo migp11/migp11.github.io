@@ -3,40 +3,105 @@ layout: base.njk
 title: "Miguel Ponce de León"
 ---
 
-<h2> Established Researcher of Computational Systems Biology and Data Science </h2>
-<h3>Life Science Department, Barcelona supercomputing Center</h3>
 
-<hr>
+<div class="hero">
+  <canvas id="net-bg" aria-hidden="true"></canvas>
+  <h2>Computational Systems Biology, Complex Systems &amp; AI</h2>
+<h3>Life Sciences Department, Barcelona Supercomputing Center</h3>
+</div>
+
+
 
 <div class="profile-container">
 
-  <!-- Left column -->
   <div class="profile-left">
     <img src="images/profile.png" alt="Miguel Ponce de León" class="profile-picture">
 
     <div class="profile-buttons">
       <a href="https://exportcvuy.anii.org.uy/cvsni/?urlId=cad7738fc88c63863fb743e44e2ef716a26303482379dc67083f48e9970a31a252b9d9cf018342f92963ce87a37963f6f27e9c655de89162346c6e6d7b8713f0&formato=html&convocatoria=21" target="_blank" class="button-cv">
-        <svg class="icon"><use xlink:href="#icon-pdf"></use></svg>
-        CV (SNI)
+        <i class="fa-solid fa-file-pdf"></i> CV (SNI)
       </a>
-
       <a href="mailto:miguel.ponce@bsc.es" class="button-email">
-        <svg class="icon"><use xlink:href="#icon-email"></use></svg>
-        Email Me
+        <i class="fa-solid fa-envelope"></i> Email Me
       </a>
     </div>
   </div>
 
-  <!-- Right column -->
   <div class="profile-right">
-    <p>I am a researcher in life sciences with expertise in systems biology, bioinformatics, and data analysis. My work integrates computational modeling with experimental data to understand biological mechanisms and cell behavior.</p>
+    <p>I build computational models to understand how cells behave, how diseases spread, and how cities shape the health of the people living in them. My work sits at the intersection of systems biology, epidemiology, and data science — connected by a shared interest in complex systems, and the tools needed to simulate and analyse such as ML/AI and ABM.</p>
 
-    <p>More recently, I have explored geo-spatial analysis and population mobility, investigating their impact on urban health and epidemic dynamics.</p>
+    <p>At the Barcelona Supercomputing Center I develop multiscale models of cancer and cellular signalling, and apply geo-spatial and mobility analysis to study epidemic dynamics and urban health. Across both areas I work closely with HPC infrastructure to run large-scale simulations and model exploration workflows.</p>
 
-    <p>I also have extensive experience as a software developer, building data-driven models and computational tools to support research in systems biology, epidemiology, and health policy.</p>
+    <p>Outside the lab I enjoy time with my family, music, reading, and any excuse to be outdoors — sea, mountains, or forest.</p>
   </div>
 
 </div>
 
+<script>
+(function() {
+  const canvas = document.getElementById('net-bg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
 
-</div>
+  const W = canvas.width, H = canvas.height;
+  const PRIMARY = '#aaaaaa';
+  const N = 30;
+
+  const nodes = Array.from({length: N}, () => ({
+    x: Math.random() * W,
+    y: Math.random() * H,
+    vx: (Math.random() - 0.5) * 0.4,
+    vy: (Math.random() - 0.5) * 0.4,
+    r: 1.5 + Math.random() * 2.5
+  }));
+
+  const EDGE_DIST = 90;
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    for (let i = 0; i < N; i++) {
+      for (let j = i + 1; j < N; j++) {
+        const dx = nodes[i].x - nodes[j].x;
+        const dy = nodes[i].y - nodes[j].y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < EDGE_DIST) {
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[j].x, nodes[j].y);
+          ctx.strokeStyle = PRIMARY;
+          ctx.globalAlpha = (1 - d / EDGE_DIST) * 0.18;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    ctx.globalAlpha = 0.3;
+    for (const n of nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = PRIMARY;
+      ctx.globalAlpha = 0.55;
+      ctx.fill();
+    }
+
+    ctx.globalAlpha = 1;
+    for (const n of nodes) {
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > W) n.vx *= -1;
+      if (n.y < 0 || n.y > H) n.vy *= -1;
+    }
+
+    requestAnimationFrame(draw);
+  }
+draw();
+})();
+</script>
