@@ -5,207 +5,252 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/projects-cards.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="/favicon.ico" />
   <meta name="description" content="Personal website of Miguel Ponce de León.">
 </head>
-
-  <!-- SVG sprite definitions -->
-  <svg style="display: none;">
-  <!-- PDF Icon -->
-  <symbol id="icon-pdf" viewBox="0 0 24 24">
-    <path d="M11.363 2c4.155 0 2.637 6 2.637 6s6-1.65 6 2.457v11.543h-16v-20h7.363zm.826-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z"/>
-  </symbol>
-
-  <!-- Email Icon -->
-  <symbol id="icon-email" viewBox="0 0 24 24">
-    <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
-  </symbol>
-  </svg>
-
 <body>
 
   <header>
     <h1><a href="/">Miguel Ponce de León</a></h1>
     <nav>
-  <a href="/">Home</a>
-  <a href="/research/">Research</a>
-  <a href="/projects/">Projects</a>
-  <a href="/teaching/">Teaching</a>
-  <a href="/bio/">Bio</a>
+  <a href="/" >Home</a>
+  <a href="/research/" class="nav-active">Research</a>
+  <a href="/projects/" >Projects</a>
+  <a href="/teaching/" >Teaching</a>
+  <a href="/bio/" >Bio</a>
 </nav>
 
   </header>
 
   <main>
     
-<section id="Research">
-<h2>Research</h2>
+<section id="research">
+
+<nav class="toc">
+  <strong>Contents</strong>
+  <ul>
+    <li><a href="#working-papers">Working Papers</a></li>
+    <li><a href="#publications">Publications</a>
+      <ul>
+        <li><a href="#pubssysbiol">Systems Biology and Cancer Modeling</a></li>
+        <li><a href="#epimobpubs">Epidemiology, Mobility and Urban Health</a></li>
+        <li><a href="#hpcpubs">HPC, Computational Infrastructure and Big Data</a></li>
+        <li><a href="#bioinfopubs">Bioinformatics, Genomics, and Sequence Analysis</a></li>
+      </ul>
+    </li>
+    <li><a href="#research-projects">Research Projects</a></li>
+  </ul>
+</nav>
 
 <hr>
 
-<h3>Publications</h2>
-<ul>
-    <li><a href="#drafts">Working Papers</a></li>
-    <li><a href="#publications">Published Articles</a>
-    <ul>
-      <li><a href="#pubssysbiol">Systems Biology and Cancer Modeling</a></li>
-      <li><a href="#epimobpubs">Epidemiology, Mobility and Urban Health</a></li>
-      <li><a href="#hpcpubs">HPC, Computational Infrastructure and Big Data</a></li>
-      <li><a href="#bioinfopubs">Bioinformatics, Genomics, and Sequence Analysis</a></li>
-    </ul>
-</ul>
-
-<hr>
-
-<h3>Research Projects</h2>
-<ul>
-  <li><a href="#meprecisa">MePreCiSa: Aplicaciones de Machine Learning para el reconocimiento y el pronóstico de eventos complejos</a></li>
-  <li><a href="#crexdata">Critical Action Planing Over Extreme-Scale Data</a></li>
-  <li><a href="#permedcoe">Perzonalized Medicine Center of Excellence</a></li>
-  <li><a href="#infore">Interactive Extreme-Scale Analytics and Forecasting</a></li>
-</ul>
-  
-<hr>
-<br>
-
-
-<h3 id="drafts">Working Papers</h2>
+<h2 id="working-papers">Working Papers</h2>
 <ul>
   <li><em>Ripples in water: epidemiological forecasting with wastewater signals and hybrid neural-compartmental networks.</em></li>
-  <li><em>Integrating genome-scale metabolic models into multi-scale simulations</em></li>
-  <li><em>Extreme-scale calibration of Epidemic Simulations</em></li>
-  <li><em>A Methodological Framework to Guide Air Pollution Exposure Assessment Integrating Population Mobility</em></li>
+  <li><em>Integrating genome-scale metabolic models into multi-scale simulations.</em></li>
+  <li><em>Extreme-scale calibration of Epidemic Simulations.</em></li>
+  <li><em>A Methodological Framework to Guide Air Pollution Exposure Assessment Integrating Population Mobility.</em></li>
 </ul>
 
 <hr>
-<br>
 
-<h3 id="publications">Publications</h3>
+<h2 id="publications">Publications</h2>
 
-<h4 id="pubssysbiol">Systems Biology</h4>
+<h3 id="pubssysbiol">Systems Biology and Cancer Modeling</h3>
 <ul>
-  <li>Benedicto, X., Flobak, Å., <strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, & Valencia, A. (2025). <em>Constraint based modeling of drug induced metabolic changes in a cancer cell line.</em> <i>NPJ Systems Biology and Applications</i>.</li>
-  
-  <li>Niarakis, A., et al. (2024). <em>Drug-target identification in COVID-19 disease mechanisms using computational systems biology approaches.</em> <i>Frontiers in Immunology</i>.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong>, Montagud, A., Noël, V., Meert, A., Pradas, G., Barillot, E., Calzone, L., & Valencia, A. (2023). <em>PhysiBoSS 2.0: a sustainable integration of stochastic Boolean and agent-based modelling frameworks.</em> <i>NPJ Systems Biology and Applications</i>.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Montagud, A., Akasiadis, C., Schreiber, J., Ntiniakou, T., & Valencia, A. (2022). <em>Optimizing dosage-specific treatments in a multi-scale model of a tumor growth.</em> <i>Frontiers in Molecular Biosciences</i>.</li>
-  
-  <li>Montagud, A., <strong>Ponce-de-León, M.</strong>, & Valencia, A. (2021). <em>Systems Biology at the giga-scale: large multi-scale models of complex, heterogeneous multicellular systems.</em> <i>Current Opinion in Systems Biology</i>.</li>
+  <li>Hayoun-Mya, O., Montagud, A., Valencia, A., & <strong>Ponce-de-León, M.</strong> (2026). <em>Experimentally calibrated multiscale model predicts schedule dependent drug combination effects.</em> <i>NPJ Systems Biology and Applications</i>. [<a href="https://doi.org/10.1038/s41540-026-00669-4" target="_blank">DOI</a>]</li>
 
-  <li><strong>Ponce-de-León, M.</strong>, Apaolaza, I., Valencia, A., & Planes, F. J. (2020). <em></em>On the inconsistent treatment of gene-protein-reaction rules in context-specific metabolic models</em>. <i>Bioinformatics</i>.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, et al. (2017). <em>Determinism and contingency shape metabolic complementation in an endosymbiotic consortium.</em> <i>Frontiers in Microbiology</i>.</li>
-  
-  <li>Mori, M., <strong>Ponce-de-León, M.</strong>, Peretó, J., & Montero, F. (2016). <em>Metabolic complementation in bacterial communities: necessary conditions and optimality.</em> <i>Frontiers in Microbiology</i>.</li>
-  
-  <li>Calle-Espinosa, J., <strong>Ponce-de-León, M.</strong>, et al. (2016). <em>Nature lessons: The whitefly bacterial endosymbiont is a minimal amino acid factory with unusual energetics.</em> <i>Journal of Theoretical Biology</i>.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong>, Calle-Espinosa, J., Peretó, J., & Montero, F. (2015). <em>Consistency Analysis of Genome-Scale Models of Bacterial Metabolism: A Metamodel Approach.</em> <i>PLOS ONE</i>.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Montero, F., & Peretó, J. (2013). <em>Solving gap metabolites and blocked reactions in genome-scale models: application to the metabolic network of Blattabacterium cuenoti.</em> <i>BMC Systems Biology</i>, 7(1), 114.</li>
-  
-  <li><strong>Ponce-de-León, M.</strong>, Cancela, H., & Acerenza, L. (2008). <em>A strategy to calculate the patterns of nutrient consumption by microorganisms applying a two-level optimisation principle to reconstructed metabolic networks.</em> <i>Journal of Biological Physics</i>.</li>
+  <li>Benedicto, X., Flobak, Å., <strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, & Valencia, A. (2025). <em>Constraint based modeling of drug induced metabolic changes in a cancer cell line.</em> <i>NPJ Systems Biology and Applications</i>. [<a href="https://doi.org/10.1038/s41540-025-00586-y" target="_blank">DOI</a>]</li>
+
+  <li>Niarakis, A., et al. (2024). <em>Drug-target identification in COVID-19 disease mechanisms using computational systems biology approaches.</em> <i>Frontiers in Immunology</i>. [<a href="https://doi.org/10.3389/fimmu.2023.1282859" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong>, Montagud, A., Noël, V., Meert, A., Pradas, G., Barillot, E., Calzone, L., & Valencia, A. (2023). <em>PhysiBoSS 2.0: a sustainable integration of stochastic Boolean and agent-based modelling frameworks.</em> <i>NPJ Systems Biology and Applications</i>. [<a href="https://doi.org/10.1038/s41540-023-00314-4" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Montagud, A., Akasiadis, C., Schreiber, J., Ntiniakou, T., & Valencia, A. (2022). <em>Optimizing dosage-specific treatments in a multi-scale model of a tumor growth.</em> <i>Frontiers in Molecular Biosciences</i>. [<a href="https://doi.org/10.3389/fmolb.2022.836794" target="_blank">DOI</a>]</li>
+
+  <li>Montagud, A., <strong>Ponce-de-León, M.</strong>, & Valencia, A. (2021). <em>Systems Biology at the giga-scale: large multi-scale models of complex, heterogeneous multicellular systems.</em> <i>Current Opinion in Systems Biology</i>. [<a href="https://doi.org/10.1016/j.coisb.2021.100385" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong>, Apaolaza, I., Valencia, A., & Planes, F. J. (2020). <em>On the inconsistent treatment of gene-protein-reaction rules in context-specific metabolic models.</em> <i>Bioinformatics</i>. [<a href="https://doi.org/10.1093/bioinformatics/btz832" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, et al. (2017). <em>Determinism and contingency shape metabolic complementation in an endosymbiotic consortium.</em> <i>Frontiers in Microbiology</i>. [<a href="https://doi.org/10.3389/fmicb.2017.02290" target="_blank">DOI</a>]</li>
+
+  <li>Mori, M., <strong>Ponce-de-León, M.</strong>, Peretó, J., & Montero, F. (2016). <em>Metabolic complementation in bacterial communities: necessary conditions and optimality.</em> <i>Frontiers in Microbiology</i>. [<a href="https://doi.org/10.3389/fmicb.2016.01553" target="_blank">DOI</a>]</li>
+
+  <li>Calle-Espinosa, J., <strong>Ponce-de-León, M.</strong>, et al. (2016). <em>Nature lessons: The whitefly bacterial endosymbiont is a minimal amino acid factory with unusual energetics.</em> <i>Journal of Theoretical Biology</i>. [<a href="https://doi.org/10.1016/j.jtbi.2016.07.024" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong>, Calle-Espinosa, J., Peretó, J., & Montero, F. (2015). <em>Consistency Analysis of Genome-Scale Models of Bacterial Metabolism: A Metamodel Approach.</em> <i>PLOS ONE</i>. [<a href="https://doi.org/10.1371/journal.pone.0143626" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Montero, F., & Peretó, J. (2013). <em>Solving gap metabolites and blocked reactions in genome-scale models: application to the metabolic network of Blattabacterium cuenoti.</em> <i>BMC Systems Biology</i>, 7(1), 114. [<a href="https://doi.org/10.1186/1752-0509-7-114" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong>, Cancela, H., & Acerenza, L. (2008). <em>A strategy to calculate the patterns of nutrient consumption by microorganisms applying a two-level optimisation principle to reconstructed metabolic networks.</em> <i>Journal of Biological Physics</i>. [<a href="https://doi.org/10.1007/s10867-008-9067-2" target="_blank">DOI</a>]</li>
 </ul>
 
-
-<!-- 🦠 COVID-19, Epidemiology, and Mobility -->
-<h4 id="epimobpubs">Epidemiology, Mobility and Urban Health</h4>
+<h3 id="epimobpubs">Epidemiology, Mobility and Urban Health</h3>
 <ul>
-  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Pontes, C., Arenas, A., & Valencia, A. (2025). <em>Assessing the impact of interregional mobility on COVID19 spread in Spain using transfer entropy.</em> <i>Scientific Reports</i>, 15(1), 31504.</li>
-  <li>Navarro-Martínez, A., Hajji, M., Armengol, J. M., Soret, A., <strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, & Valencia, A. (2025). <em>The effect of recurrent mobility on air pollution exposure and mortality burden in Catalonia.</em> <i>International Journal of Health Geographics</i>, 24(1), 19.</li>
-  <li>Naidoo, M., Shephard, W., Mtshali, N., Kambewe, I., Muthien, B., Abuelezam, N. N., <strong>Ponce-de-León, M.</strong>, Villela, D. A. M., Paes-Sousa, R., Pan-ngum, W., et al. (2025). <em>How to incorporate social vulnerability into epidemic mathematical modelling: recommendations from an international Delphi.</em> <i>Social Science & Medicine</i>, 118352.</li>
-  <li>Noël, V., Carbonell, J., <strong>Ponce-de-León, M.</strong>, Soliman, S., Niarakis, A., Calzone, L., Barillot, E., & Valencia, A., et al. (2020). <em>PhysiBoSS-COVID: Boolean modelling of COVID-19 signalling pathways in a multicellular simulation framework.</em></li>
+  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Pontes, C., Arenas, A., & Valencia, A. (2025). <em>Assessing the impact of interregional mobility on COVID-19 spread in Spain using transfer entropy.</em> <i>Scientific Reports</i>, 15(1), 31504. [<a href="https://doi.org/10.1038/s41598-025-95639-3" target="_blank">DOI</a>]</li>
+
+  <li>Navarro-Martínez, A., Hajji, M., Armengol, J. M., Soret, A., <strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, & Valencia, A. (2025). <em>The effect of recurrent mobility on air pollution exposure and mortality burden in Catalonia.</em> <i>International Journal of Health Geographics</i>, 24(1), 19. [<a href="https://doi.org/10.1186/s12942-025-00393-2" target="_blank">DOI</a>]</li>
+
+  <li>Naidoo, M., Shephard, W., Mtshali, N., Kambewe, I., Muthien, B., Abuelezam, N. N., <strong>Ponce-de-León, M.</strong>, et al. (2025). <em>How to incorporate social vulnerability into epidemic mathematical modelling: recommendations from an international Delphi.</em> <i>Social Science &amp; Medicine</i>, 383, 118352. [<a href="https://doi.org/10.1016/j.socscimed.2025.118352" target="_blank">DOI</a>]</li>
+
+  <li>Andrienko, G., Andrienko, N., Akila, M., Kathirgamanathan, B., & <strong>Ponce-de-León, M.</strong> (2026). <em>Detecting Stable Cross-Impact Patterns in Bivariate Time Series.</em> <i>IEEE Transactions on Visualization and Computer Graphics</i>. [<a href="https://doi.org/10.1109/TVCG.2026.3689736" target="_blank">DOI</a>]</li>
+
   <li>Andrienko, G., Andrienko, N., & <strong>Ponce-de-León, M.</strong> (2024). <em>Mapping Time Lags in Epidemics.</em> <i>Abstracts of the ICA</i>, 8, 2.</li>
-  <li>Smith, M., <strong>Ponce-de-León, M.</strong>, & Valencia, A. (2022). <em>Evaluating the policy of closing bars and restaurants in Cataluña and its effects on mobility and COVID19 incidence.</em> <i>Scientific Reports</i>, 12(1), 9132.</li>
-  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Del Valle, J., et al. (2021). <em>COVID-19 Flow-Maps: an open geographic information system on COVID-19 and human mobility for Spain.</em> <i>Scientific Data</i>, 8(1), 310.</li>
-  <li>Ferrari, A., Santus, E., Cirillo, D., <strong>Ponce-de-León, M.</strong>, et al. (2021). <em>Simulating SARS-CoV-2 epidemics by region-specific variables and modeling contact tracing app containment.</em> <i>NPJ Digital Medicine</i>, 4(1), 9.</li>
+
+  <li>Smith, M., <strong>Ponce-de-León, M.</strong>, & Valencia, A. (2022). <em>Evaluating the policy of closing bars and restaurants in Cataluña and its effects on mobility and COVID-19 incidence.</em> <i>Scientific Reports</i>, 12(1), 9132. [<a href="https://doi.org/10.1038/s41598-022-13101-4" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong><span class="corresponding">✉︎</span>, Del Valle, J., et al. (2021). <em>COVID-19 Flow-Maps: an open geographic information system on COVID-19 and human mobility for Spain.</em> <i>Scientific Data</i>, 8(1), 310. [<a href="https://doi.org/10.1038/s41597-021-01093-5" target="_blank">DOI</a>]</li>
+
+  <li>Ferrari, A., Santus, E., Cirillo, D., <strong>Ponce-de-León, M.</strong>, et al. (2021). <em>Simulating SARS-CoV-2 epidemics by region-specific variables and modeling contact tracing app containment.</em> <i>NPJ Digital Medicine</i>, 4(1), 9. [<a href="https://doi.org/10.1038/s41746-021-00399-5" target="_blank">DOI</a>]</li>
+
+  <li>Noël, V., Carbonell, J., <strong>Ponce-de-León, M.</strong>, et al. (2020). <em>PhysiBoSS-COVID: Boolean modelling of COVID-19 signalling pathways in a multicellular simulation framework.</em></li>
 </ul>
 
-<h4 id="hpcpubs">HPC, Computational Infrastructure and Big Data</h4>
-<ul> 
-  <li>Streviniotis, E., Giatrakos, N., Kotidis, Y., Ntiniakou, T., & <strong>Ponce-de-León, M.</strong> (2025). <em>RATS: A resource allocator for optimizing the execution of tumor simulations over HPC infrastructures.</em> <i>Information Systems</i>, 132, 102538.</li>
-  <li>Streviniotis, E., Giatrakos, N., Kotidis, Y., Ntiniakou, T., & <strong>Ponce-de-León, M.</strong> (2023). <em>Optimizing Resource Allocation for Tumor Simulations over HPC Infrastructures.</em> In 2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA) (pp. 1-10).</li>
-  <li>Akasiadis, C., <strong>Ponce-de-León, M.</strong>, et al. (2022). <em>Parallel model exploration for tumor treatment simulations.</em> <i>Computational Intelligence</i>.</li>  
-  <li>Saxena, G., <strong>Ponce-de-León, M.</strong>, Montagud, A., Vicente Dorca, D., & Valencia, A. (2021). <em>BioFVM-X: An MPI+OpenMP 3-D Simulator for Biological Systems.</em> In <i>Computational Methods in Systems Biology</i>, 266–279.</li>
-  <li>Giatrakos, N., .... , <strong>Ponce-de-León, M.</strong>, et al. (2020). <em>Infore: Interactive cross-platform analytics for everyone.</em> In <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>, 3389–3392.</li>
-  <li>Giatrakos, N., .... , <strong>Ponce-de-León, M.</strong>, et al. (2019). <em>Interactive extreme-scale analytics: towards battling cancer.</em> <i>IEEE Technology and Society Magazine</i>, 38(2), 54–61.</li>
-</ul>
-
-<h4 id="bioinfopubs">Bioinformatics, Genomics, and Sequence Analysis</h4>
+<h3 id="hpcpubs">HPC, Computational Infrastructure and Big Data</h3>
 <ul>
-  <li>Carels, N., & <strong>Ponce-de-León, M.</strong> (2015). <em>An interpretation of the ancestral codon from Miller's amino acids and nucleotide correlations in modern coding sequences.</em> <i>Bioinformatics and Biology Insights</i>, 9, BBI–S24021.</li>
-  <li><strong>Ponce-de-León, M.</strong>, Basilio de Miranda, A., Alvarez-Valin, F., & Carels, N. (2014). <em>The Purine Bias of Coding Sequences is Determined by Physicochemical Constraints on Proteins.</em> <i>Bioinformatics and Biology Insights</i>, 8, 93–108.</li>
-  <li>Greif, G.*, <strong>Ponce-de-León, M.*</strong>, Lamolle, G., Rodriguez, M., Piñeyro, D., Tavares-Marques, L. M., Reyna-Bello, A., Robello, C., & Alvarez-Valin, F. (2013). <em>Transcriptome analysis of the bloodstream stage from the parasite Trypanosoma vivax.</em> <i>BMC Genomics</i>, 14(1), 149.</li>
+  <li>Streviniotis, E., Giatrakos, N., Kotidis, Y., Ntiniakou, T., & <strong>Ponce-de-León, M.</strong> (2025). <em>RATS: A resource allocator for optimizing the execution of tumor simulations over HPC infrastructures.</em> <i>Information Systems</i>, 132, 102538. [<a href="https://doi.org/10.1016/j.is.2024.102538" target="_blank">DOI</a>]</li>
+
+  <li>Streviniotis, E., Giatrakos, N., Kotidis, Y., Ntiniakou, T., & <strong>Ponce-de-León, M.</strong> (2023). <em>Optimizing Resource Allocation for Tumor Simulations over HPC Infrastructures.</em> In <i>2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA)</i>.</li>
+
+  <li>Akasiadis, C., <strong>Ponce-de-León, M.</strong>, et al. (2022). <em>Parallel model exploration for tumor treatment simulations.</em> <i>Computational Intelligence</i>. [<a href="https://doi.org/10.1111/coin.12489" target="_blank">DOI</a>]</li>
+
+  <li>Saxena, G., <strong>Ponce-de-León, M.</strong>, Montagud, A., Vicente Dorca, D., & Valencia, A. (2021). <em>BioFVM-X: An MPI+OpenMP 3-D Simulator for Biological Systems.</em> In <i>Computational Methods in Systems Biology</i>, 266–279. [<a href="https://doi.org/10.1007/978-3-030-85633-5_16" target="_blank">DOI</a>]</li>
+
+  <li>Giatrakos, N., et al. (2020). <em>Infore: Interactive cross-platform analytics for everyone.</em> In <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>, 3389–3392.</li>
+
+  <li>Giatrakos, N., et al. (2019). <em>Interactive extreme-scale analytics: towards battling cancer.</em> <i>IEEE Technology and Society Magazine</i>, 38(2), 54–61. [<a href="https://doi.org/10.1109/MTS.2019.2913985" target="_blank">DOI</a>]</li>
+
+  <li>Lloret-Llinares, M., Thomas-Lopez, D., Carbonell-Caballero, J., Calzone, L., Conejero, J., Harrison, J. P., Kratochvil, M., Montagud, A., Noël, V., Nortamo, H., <strong>Ponce-de-León, M.</strong>, et al. (2026). <em>Leveraging training expertise to build capacity in computational personalised medicine.</em> <i>Bioinformatics Advances</i>, 6(1), vbag070. [<a href="https://doi.org/10.1093/bioadv/vbag070" target="_blank">DOI</a>]</li>
+</ul>
+
+<h3 id="bioinfopubs">Bioinformatics, Genomics, and Sequence Analysis</h3>
+<ul>
+  <li>Carels, N., & <strong>Ponce-de-León, M.</strong> (2015). <em>An interpretation of the ancestral codon from Miller's amino acids and nucleotide correlations in modern coding sequences.</em> <i>Bioinformatics and Biology Insights</i>, 9. [<a href="https://doi.org/10.4137/BBI.S24021" target="_blank">DOI</a>]</li>
+
+  <li><strong>Ponce-de-León, M.</strong>, Basilio de Miranda, A., Alvarez-Valin, F., & Carels, N. (2014). <em>The Purine Bias of Coding Sequences is Determined by Physicochemical Constraints on Proteins.</em> <i>Bioinformatics and Biology Insights</i>, 8, 93–108. [<a href="https://doi.org/10.4137/BBI.S13161" target="_blank">DOI</a>]</li>
+
+  <li>Greif, G.*, <strong>Ponce-de-León, M.*</strong>, Lamolle, G., Rodriguez, M., Piñeyro, D., Tavares-Marques, L. M., Reyna-Bello, A., Robello, C., & Alvarez-Valin, F. (2013). <em>Transcriptome analysis of the bloodstream stage from the parasite Trypanosoma vivax.</em> <i>BMC Genomics</i>, 14(1), 149. [<a href="https://doi.org/10.1186/1471-2164-14-149" target="_blank">DOI</a>]</li>
 </ul>
 
 <hr>
-<br>
-<br>
-<h3 id="projects">Research Projects</h3>
 
-<hr>
+<h2 id="research-projects">Research Projects</h2>
 
-<div>
-    <img id="meprecisa" src="/images/meprecisa.png" height="60" alt="MePreCiSa">
-    <div>I coordinated the <a href="https://meprecisa.com/" target="_blank">MePreCiSa project</a> (2023–2025), funded through the UNICO I+D Cloud programme by the Spanish Ministry for Digital Transformation and Public Administration and the European Union – NextGenerationEU. The project aimed to develop an open cloud platform for health management in complex urban environments by integrating mobility, environmental, and epidemiological data. The platform combined AI-, data-driven, and simulation-based technologies to support predictive analytics, urban health studies, epidemic preparedness, and decision-making. My work focused on the development of epidemic simulation and data analysis workflows, including mobility-informed epidemiological modeling and large-scale HPC-enabled simulations for outbreak analysis and intervention assessment.</div>
-</div>
+<div class="proj-grid">
 
-<hr>
+  <div class="proj-card">
+    <div class="proj-card-header">
+      <img src="/images/harmonie.png" height="36" alt="HARMONIE" style="max-width:140px; object-fit:contain;">
+    </div>
+    <p class="proj-desc" style="font-size:0.8rem; color:#777; margin:0;">2026–2029 · EU Horizon Europe (grant 101238943)</p>
+    <p class="proj-desc">Health Assessment Refinement for Mitigation of Noise and Air Quality Effects. Reduces the health impacts of air and noise pollution in European cities by linking pollution monitoring with health outcomes, modelling urban interventions, and providing decision-support tools for climate strategies.</p>
+    <div class="proj-links">
+      <a href="https://harmonie-project.eu/" target="_blank" class="proj-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> website
+      </a>
+        <a href="https://cordis.europa.eu/project/id/101238943" target="_blank" class="proj-link">
+        <i class="fa-solid fa-file-lines"></i> CORDIS
+      </a>
+    </div>
+  </div>
 
-<div>
-    <img id="crexdata" src="/images/crexdata.png" height="60" alt="CREXDATA">
-    <div>I participated in the EU-funded <a href="https://cordis.europa.eu/project/id/101092749" target="_blank">CREXDATA project</a> (2022–2025), in which we develop a versatile platform for real-time critical situation management, adaptive action planning, and agile decision-making powered by extreme-scale and complex data (<a href="https://crexdata.eu/">https://crexdata.eu/</a>). The platform combined AI-, data-driven, and simulation-based technologies to support crisis analysis and forecasting across multiple domains. I led the Health Crisis use case, where we developed EpiSim.jl, an HPC-enabled epidemic simulation framework for large-scale epidemiological modeling, calibration, uncertainty quantification, and intervention optimization.</div>
-</div>
+  <div class="proj-card">
+    <div class="proj-card-header">
+      <img src="/images/meprecisa.png" height="36" alt="MePreCiSa" style="max-width:120px; object-fit:contain;">
+    </div>
+    <p class="proj-desc" style="font-size:0.8rem; color:#777; margin:0;">2023–2025 · PI · UNICO I+D Cloud / NextGenerationEU</p>
+    <p class="proj-desc">Open cloud platform for health management in complex urban environments, integrating mobility, environmental, and epidemiological data with AI and simulation-based workflows for epidemic preparedness and decision-making.</p>
+    <div class="proj-links">
+      <a href="https://meprecisa.com/" target="_blank" class="proj-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> website
+      </a>
+    </div>
+  </div>
 
-<hr>
+  <div class="proj-card">
+    <div class="proj-card-header">
+      <img src="/images/crexdata.png" height="36" alt="CREXDATA" style="max-width:120px; object-fit:contain;">
+    </div>
+    <p class="proj-desc" style="font-size:0.8rem; color:#777; margin:0;">2022–2025 · EU Horizon Europe</p>
+    <p class="proj-desc">Platform for real-time critical situation management and adaptive decision-making over extreme-scale data. Led the Health Crisis use case, developing EpiSim.jl for large-scale epidemiological modelling, calibration, and intervention optimization.</p>
+    <div class="proj-links">
+      <a href="https://crexdata.eu/" target="_blank" class="proj-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> website
+      </a>
+      <a href="https://cordis.europa.eu/project/id/101092749" target="_blank" class="proj-link">
+        <i class="fa-solid fa-file-lines"></i> CORDIS
+      </a>
+    </div>
+  </div>
 
-<div>
-    <img id="permedcoe" src="/images/permedcoe.png" height="120" alt="PerMedCoE">
-    <div>I participated in the <a href="https://permedcoe.eu" target="_blank">PerMedCoE project</a> (2020–2023), funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 951773. The project aimed to provide an efficient and sustainable entry point to HPC and exascale technologies for personalized medicine by translating omics data into actionable mechanistic models of cellular behavior. PerMedCoE combined HPC, AI-, data-driven, and simulation-based methodologies to enable large-scale cell-level simulations and predictive workflows for biomedical research. My contribution focused on the development and optimization of multicellular and mechanistic simulation workflows for cancer research, including HPC-enabled analyses of tumor dynamics, drug response, and multiscale biological systems.</div>
-</div>
-<hr>
-<div>
-    <img id="infore" src="/images/infore.png" height="40" alt="INFORE">
-    <div>I participated in the INFORE project (2019–2022), funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 825070. The project aimed to develop technologies for interactive extreme-scale analytics and forecasting over massive streaming datasets, combining HPC, AI, machine learning, and data-driven workflows for real-time decision support. The INFORE platform was applied to domains including life sciences, finance, and maritime situational awareness. My contribution focused on the Life Sciences use case, where I worked on large-scale multicellular and cancer simulation workflows, HPC-enabled data analysis, and predictive modeling for studying tumor growth and drug synergies.</div>
+  <div class="proj-card">
+    <div class="proj-card-header">
+      <img src="/images/permedcoe.png" height="36" alt="PerMedCoE" style="max-width:120px; object-fit:contain;">
+    </div>
+    <p class="proj-desc" style="font-size:0.8rem; color:#777; margin:0;">2020–2023 · EU Horizon 2020 (grant 951773)</p>
+    <p class="proj-desc">HPC and exascale entry point for personalized medicine, translating omics data into mechanistic models of cellular behaviour. Contributed multicellular simulation workflows for cancer research, including tumour dynamics and drug response analyses.</p>
+    <div class="proj-links">
+      <a href="https://permedcoe.eu" target="_blank" class="proj-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> website
+      </a>
+      <a href="https://cordis.europa.eu/project/id/951773" target="_blank" class="proj-link">
+        <i class="fa-solid fa-file-lines"></i> CORDIS
+      </a>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-card-header">
+      <img src="/images/infore.png" height="36" alt="INFORE" style="max-width:120px; object-fit:contain;">
+    </div>
+    <p class="proj-desc" style="font-size:0.8rem; color:#777; margin:0;">2019–2022 · EU Horizon 2020 (grant 825070)</p>
+    <p class="proj-desc">Interactive extreme-scale analytics and forecasting over massive streaming datasets. Contributed to the Life Sciences use case with large-scale cancer simulation workflows and predictive modelling for tumour growth and drug synergies.</p>
+    <div class="proj-links">
+      <a href="https://infore-project.eu/" target="_blank" class="proj-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> website
+      </a>
+      <a href="https://cordis.europa.eu/project/id/825070" target="_blank" class="proj-link">
+        <i class="fa-solid fa-file-lines"></i> CORDIS
+      </a>
+    </div>
+   </div>
+  
+  
 </div>
 
 </section>
+
   </main>
 
   <footer>
     <section id="contact" style="text-align:center">
       <hr>
-      <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 1rem;">
-        
-        <!-- ORCID Profile -->
-        <a href="https://orcid.org/0000-0002-7496-844X" target="_blank" style="text-decoration: none; color: inherit; text-align: center;">
-          <img src="https://orcid.org/favicon.ico" alt="ORCID" style="width:30px; height:30px; display:block; margin:0 auto; transition: transform 0.2s;">
-        </a>
-        
-        <!-- Google Scholar -->
-        <a href="https://scholar.google.com/citations?user=PEFjeYIAAAAJ&hl=en" target="_blank" style="text-decoration: none; color: inherit; text-align: center;">
-          <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar" style="width:30px; height:30px; display:block; margin:0 auto; transition: transform 0.2s;">
+      <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 1rem;">
+
+        <a href="https://orcid.org/0000-0002-7496-844X" target="_blank" class="footer-icon" aria-label="ORCID">
+          <i class="fa-brands fa-orcid"></i>
         </a>
 
-        <!-- GitHub -->
-        <a href="https://github.com/migp11" target="_blank" style="text-decoration: none; color: inherit; text-align: center;">
-          <img src="https://github.com/favicon.ico" alt="GitHub" style="width:30px; height:30px; display:block; margin:0 auto; transition: transform 0.2s;">
+        <a href="https://scholar.google.com/citations?user=PEFjeYIAAAAJ&hl=en" target="_blank" class="footer-icon" aria-label="Google Scholar">
+          <i class="fa-solid fa-graduation-cap"></i>
         </a>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/miguel-ponce-de-león-msc-phd-29a81938" target="_blank" style="text-decoration: none; color: inherit; text-align: center;">
-          <img src="/images/linkedin.ico" alt="LinkedIn" style="width:30px; height:30px; display:block; margin:0 auto; transition: transform 0.2s;">
+        <a href="https://github.com/migp11" target="_blank" class="footer-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
         </a>
 
-        <!-- X / Twitter -->
-        <a href="https://x.com/miguep11" target="_blank" style="text-decoration: none; color: inherit; text-align: center;">
-          <img src="https://x.com/favicon.ico" alt="X / Twitter" style="width:30px; height:30px; display:block; margin:0 auto; transition: transform 0.2s;">
+        <a href="https://www.linkedin.com/in/miguel-ponce-de-león-msc-phd-29a81938" target="_blank" class="footer-icon" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
+
+        <a href="https://x.com/miguep11" target="_blank" class="footer-icon" aria-label="X / Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
       </div>
     </section>
-    
     <p>© Miguel Ponce de León</p>
   </footer>
 
